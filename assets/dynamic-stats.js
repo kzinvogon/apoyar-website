@@ -10,10 +10,9 @@ async function loadEngineeringStats() {
     blocks.forEach(block => {
       const key = block.dataset.liveProject;
       const s = data[key];
-      if (!s || !s.configured) {
-        block.querySelectorAll("[data-stat]").forEach(x => {
-          if (key === "serviflow") x.textContent = "Connect repository";
-        });
+      if (!s || !s.configured || s.error) {
+        const message = s && s.error ? "Repository temporarily unavailable" : "Connect repository";
+        block.querySelectorAll("[data-stat]").forEach(x => { x.textContent = message; });
         return;
       }
       const map = {
