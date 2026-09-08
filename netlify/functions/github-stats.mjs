@@ -65,7 +65,7 @@ async function stats(slug,token){
       contributors:contributors.length, series30, updatedAt:new Date().toISOString()
     };
   } catch(e) {
-    return {configured:true, repo:slug, error:e.message, hasToken:Boolean(token), tokenLen:token?token.length:0};
+    return {configured:true, repo:slug, error:e.message};
   }
 }
 export default async () => {
