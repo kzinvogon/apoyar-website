@@ -185,3 +185,25 @@ footer{background:#061f34;color:#b6c9d4;padding:55px 0 28px}
 .flagship-grid .card:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--teal),var(--blue))}
 .flagship-grid .card:nth-child(2):before{background:linear-gradient(90deg,var(--blue),var(--teal))}
 .flagship-grid .card:nth-child(3):before{background:linear-gradient(90deg,var(--teal),var(--green))}
+
+/* Commercial offers — Launch, Modernise, Operate */
+.offer-section{background:#f5f2eb}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.offer{padding:36px 30px;background:#fff;display:flex;flex-direction:column;min-height:430px}
+.offer+.offer{border-left:1px solid var(--line)}
+.offer-highlight{background:#eef7f7}
+.offer>span{color:var(--teal);font-size:12px;font-weight:900;letter-spacing:.14em}
+.offer h3{font-size:30px;margin-top:28px}
+.offer p{color:var(--muted)}
+.offer ul{list-style:none;padding:0;margin:12px 0 28px}
+.offer li{font-size:13px;padding:9px 0;border-top:1px solid var(--line)}
+.offer a{color:var(--teal);font-size:13px;font-weight:900;margin-top:auto}
+.architecture-sprint{background:linear-gradient(115deg,#087f81,#13a0a8);color:#fff}
+.architecture-sprint h2{color:#fff}
+.architecture-sprint p{color:#d8f2f2;margin:0}
+.architecture-sprint .eyebrow{color:#d8f2f2}
+.sprint-grid{display:grid;grid-template-columns:1.15fr .95fr auto;gap:44px;align-items:center}
+.sprint-list{display:grid;gap:8px;font-size:13px}
+.sprint-list span:before{content:"✓";margin-right:9px}
+.architecture-sprint .button{background:#fff;color:var(--navy)!important;border-color:#fff}
+@media(max-width:900px){.offer-grid{grid-template-columns:1fr}.offer+.offer{border-left:0;border-top:1px solid var(--line)}.offer{min-height:auto}.sprint-grid{grid-template-columns:1fr}}
