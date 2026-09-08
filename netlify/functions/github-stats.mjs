@@ -5,13 +5,21 @@ const repos = {
   bleckmann: process.env.GITHUB_REPO_BLECKMANN || ""
 };
 
-async function gh(url) {
+// Fine-grained PATs are scoped to a single resource owner, so a repo owned by
+// a different account/org than the default token needs its own override.
+const tokens = {
+  sustentus: process.env.GITHUB_TOKEN_SUSTENTUS || process.env.GITHUB_TOKEN || "",
+  serviflow: process.env.GITHUB_TOKEN_SERVIFLOW || process.env.GITHUB_TOKEN || "",
+  bleckmann: process.env.GITHUB_TOKEN_BLECKMANN || process.env.GITHUB_TOKEN || ""
+};
+
+async function gh(url,token) {
   const headers = {
     "Accept": "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
     "User-Agent": "apoyar.io"
   };
-  if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  if (token) headers.Authorization = `Bearer ${token}`;
   const r = await fetch(url,{headers});
   if (!r.ok) throw new Error(`GitHub ${r.status}`);
   return r;
@@ -21,25 +29,25 @@ function nextLink(link){
   const n=link.split(",").find(x=>x.includes('rel="next"'));
   return n ? n.match(/<([^>]+)>/)?.[1] : null;
 }
-async function paged(url,maxPages=10){
+async function paged(url,token,maxPages=10){
   let out=[],next=url,p=0;
   while(next && p<maxPages){
-    const r=await gh(next), data=await r.json();
+    const r=await gh(next,token), data=await r.json();
     if(!Array.isArray(data)) break;
     out.push(...data); next=nextLink(r.headers.get("link")); p++;
   }
   return out;
 }
-async function stats(slug){
+async function stats(slug,token){
   if(!slug) return {configured:false};
   const [owner,repo]=slug.split("/");
   if(!owner||!repo) return {configured:false};
   try {
     const since=new Date(Date.now()-30*86400000).toISOString();
     const [commits,contributors,branches]=await Promise.all([
-      paged(`https://api.github.com/repos/${owner}/${repo}/commits?since=${encodeURIComponent(since)}&per_page=100`,10),
-      paged(`https://api.github.com/repos/${owner}/${repo}/contributors?per_page=100`,5),
-      paged(`https://api.github.com/repos/${owner}/${repo}/branches?per_page=100`,10)
+      paged(`https://api.github.com/repos/${owner}/${repo}/commits?since=${encodeURIComponent(since)}&per_page=100`,token,10),
+      paged(`https://api.github.com/repos/${owner}/${repo}/contributors?per_page=100`,token,5),
+      paged(`https://api.github.com/repos/${owner}/${repo}/branches?per_page=100`,token,10)
     ]);
     const days={};
     for(const c of commits){
@@ -62,7 +70,9 @@ async function stats(slug){
 }
 export default async () => {
   const [sustentus,serviflow,bleckmann]=await Promise.all([
-    stats(repos.sustentus),stats(repos.serviflow),stats(repos.bleckmann)
+    stats(repos.sustentus,tokens.sustentus),
+    stats(repos.serviflow,tokens.serviflow),
+    stats(repos.bleckmann,tokens.bleckmann)
   ]);
   return new Response(JSON.stringify({sustentus,serviflow,bleckmann}),{
     status:200,headers:{"content-type":"application/json","cache-control":"public,max-age=300"}
