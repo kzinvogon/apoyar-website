@@ -1,0 +1,410 @@
+/* ============================================================
+   Apoyar — Modern Enterprise Engineering
+   Warm paper palette, architectural typography, robust responsive layout.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg-page: #f7f5f0;
+  --bg-subtle: #f2efe8;
+  --bg-surface: #ffffff;
+  --bg-dark: #191713;
+  --ink-primary: #191713;
+  --ink-body: #413c34;
+  --ink-muted: #5d5850;
+  --ink-faint: #6b655c;
+  --ink-dark-body: #b8b1a6;
+  --ink-dark-muted: #7d766c;
+  --accent-rust: oklch(0.55 0.13 45);
+  --accent-rust-bright: oklch(0.62 0.14 45);
+  --accent-rust-light: oklch(0.74 0.11 45);
+  --accent-rust-hover: oklch(0.42 0.1 45);
+  --border-light: rgba(25, 23, 19, 0.12);
+  --border-medium: rgba(25, 23, 19, 0.16);
+  --border-strong: rgba(25, 23, 19, 0.25);
+  --border-dark: rgba(247, 245, 240, 0.14);
+  --border-dark-medium: rgba(247, 245, 240, 0.2);
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+::selection {
+  background: oklch(0.62 0.14 45 / 0.25);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-rust);
+}
+
+/* Header & Nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(247, 245, 240, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.site-header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand-logo {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-primary);
+}
+
+.brand-logo .dot {
+  color: var(--accent-rust-bright);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.nav-links a {
+  color: var(--ink-primary);
+}
+
+.nav-links a:hover {
+  color: var(--accent-rust);
+}
+
+.nav-links a.active {
+  border-bottom: 1px solid var(--accent-rust-bright);
+  padding-bottom: 2px;
+}
+
+.nav-cta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--ink-primary);
+  padding: 9px 15px;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.nav-cta:hover {
+  background: var(--ink-primary);
+  color: var(--bg-page) !important;
+}
+
+/* Hover Classes replacing proprietary style-hover */
+.hover-rust:hover {
+  color: var(--accent-rust) !important;
+}
+
+.hover-rust-bright:hover {
+  color: var(--accent-rust-light) !important;
+}
+
+.hover-bg-rust:hover {
+  background: var(--accent-rust-hover) !important;
+  color: #f7f5f0 !important;
+}
+
+.hover-bg-rust-light:hover {
+  background: var(--accent-rust-light) !important;
+  color: #191713 !important;
+}
+
+.hover-bg-dark:hover {
+  background: var(--ink-primary) !important;
+  color: var(--bg-page) !important;
+}
+
+.hover-border-dark:hover {
+  border-color: var(--ink-primary) !important;
+}
+
+.hover-bg-faint:hover {
+  background: rgba(25, 23, 19, 0.05) !important;
+}
+
+/* Button & Interaction primitives */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--ink-primary);
+  color: var(--bg-page);
+  padding: 16px 22px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: var(--font-sans);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-rust-hover);
+  color: var(--bg-page);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--border-strong);
+  padding: 16px 22px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: var(--font-sans);
+  color: var(--ink-primary);
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--ink-primary);
+  background: rgba(25, 23, 19, 0.03);
+  color: var(--ink-primary);
+}
+
+.btn-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--bg-page);
+  color: var(--ink-primary);
+  padding: 16px 22px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: var(--font-sans);
+  transition: background-color 0.15s ease;
+}
+
+.btn-light:hover {
+  background: var(--accent-rust-light);
+  color: var(--ink-primary);
+}
+
+/* Form Controls */
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg-page);
+  border: 1px solid rgba(25, 23, 19, 0.22);
+  border-radius: 2px;
+  padding: 13px 14px;
+  font-size: 16px;
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--accent-rust);
+  box-shadow: 0 0 0 1px var(--accent-rust);
+}
+
+.timeframe-pill {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  border-radius: 2px;
+  border: 1px solid rgba(25, 23, 19, 0.25);
+  background: transparent;
+  color: var(--ink-body);
+  transition: all 0.15s ease;
+}
+
+.timeframe-pill:hover {
+  border-color: var(--ink-primary);
+  color: var(--ink-primary);
+}
+
+.timeframe-pill.active {
+  background: var(--ink-primary);
+  color: var(--bg-page);
+  border-color: var(--ink-primary);
+}
+
+/* Architectural Telemetry Visuals */
+.telemetry-board {
+  background: #191713;
+  color: #f7f5f0;
+  border: 1px solid rgba(25, 23, 19, 0.14);
+  padding: 24px;
+  font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.telemetry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(247, 245, 240, 0.14);
+  padding-bottom: 12px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b8b1a6;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.telemetry-stat {
+  border: 1px solid rgba(247, 245, 240, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 14px 16px;
+}
+
+.telemetry-stat-num {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 300;
+  color: #f7f5f0;
+  line-height: 1;
+  margin: 0 0 6px 0;
+}
+
+.telemetry-stat-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7d766c;
+  margin: 0;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px #34d399;
+  margin-right: 6px;
+}
+
+.pipeline-track {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #b8b1a6;
+  padding: 10px 0;
+  overflow-x: auto;
+}
+
+.pipeline-node {
+  background: rgba(247, 245, 240, 0.08);
+  border: 1px solid rgba(247, 245, 240, 0.14);
+  padding: 6px 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.pipeline-arrow {
+  color: var(--accent-rust-bright);
+}
+
+/* Five Gates Flow */
+.gates-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: rgba(25, 23, 19, 0.14);
+  border: 1px solid rgba(25, 23, 19, 0.14);
+  margin-top: 32px;
+}
+
+.gate-card {
+  background: #f7f5f0;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+
+.gate-card:hover {
+  background: #ffffff;
+}
+
+.gate-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--accent-rust);
+  margin: 0;
+}
+
+.gate-name {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.gate-body {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-muted);
+  margin: 0;
+}

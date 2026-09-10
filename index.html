@@ -1,55 +1,437 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Apoyar Architects — Enterprise Software at AI Velocity</title><meta name="description" content="Apoyar designs and delivers enterprise software using human architects, AI-orchestrated engineering and interpretable context.">
-<link rel="canonical" href="https://apoyar.io/">
-<meta property="og:type" content="website"><meta property="og:title" content="Apoyar Architects — Enterprise Software at AI Velocity">
-<meta property="og:description" content="Apoyar designs and delivers enterprise software using human architects, AI-orchestrated engineering and interpretable context."><meta property="og:url" content="https://apoyar.io/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><meta property="og:image" content="https://apoyar.io/assets/og-apoyar.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><link rel="stylesheet" href="/assets/site-v5.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Apoyar Limited", "url": "https://apoyar.io", "email": "architects@apoyar.io"}</script>
-</head><body><!-- APOYAR DEPLOYMENT V5 CACHE-FIX --><header class="site-header"><div class="wrap"><nav>
-<a class="brand" href="/">APOYAR<small>ARCHITECTS</small></a>
-<button class="menu-btn" aria-label="Toggle navigation">☰</button>
-<div class="navlinks"><a href="/approach.html">Approach</a><a href="/work.html">Work</a><a href="/insights.html">Insights</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="button" href="mailto:architects@apoyar.io">Talk to us</a></div>
-</nav></div></header>
-<section class="hero"><div class="wrap grid"><div><div class="eyebrow">Enterprise Architecture · Production Engineering · AI-Orchestrated Delivery</div>
-<h1>Enterprise software.<br>Engineered at AI velocity.</h1>
-<p>Apoyar Architects design, build and operate enterprise software — from nine years of production-scale logistics engineering for Bleckmann, through AI-assisted service operations in ServiFlow, to ICM-native engineering in Sustentus.</p>
-<div class="actions"><a class="button teal" href="/approach.html">Explore our approach</a><a class="button alt" href="/assets/Apoyar_AI_Orchestrated_Engineering_White_Paper.pdf">Read the white paper</a></div>
-<div class="proof"><span>20+ years enterprise heritage</span><span>Enterprise software heritage</span><span>Human-governed AI</span></div></div>
-<div class="hero-card"><div class="eyebrow">The engineering system</div><h3>From intent to production, with explicit human gates.</h3>
-<div class="flow"><span>SCOPE</span><span>DEFINE</span><span>BUILD</span><span>VERIFY</span><span>SHIP</span></div>
-<p style="font-size:13px">Structured context lets multiple AI-assisted streams progress in parallel without surrendering architectural control.</p></div></div></section>
-<section><div class="wrap"><div class="section-head"><div class="eyebrow" style="color:var(--teal)">Three proof points</div><h2>Three generations of Apoyar engineering.</h2><p>Bleckmann proves long-running enterprise engineering at production scale. ServiFlow shows AI transforming managed-service operations. Sustentus demonstrates ICM-native, AI-orchestrated product delivery.</p></div><div class="three-col flagship-grid"><div class="card"><div class="tag">01 · Proven enterprise engineering</div><h3>Bleckmann</h3><p>Nine years of business-critical logistics engineering, CI/CD, DevOps and 24×7 support, including Black Friday volumes above one million transactions.</p><a href="/work-bleckmann.html" style="color:var(--teal);font-weight:800">View case study →</a></div><div class="card"><div class="tag">02 · AI-assisted operations</div><h3>ServiFlow</h3><p>An AI-assisted Service Center unifying monitoring, customer requests, SLA execution, development escalation, capacity and monthly reporting.</p><a href="/work-serviflow.html" style="color:var(--teal);font-weight:800">View case study →</a></div><div class="card"><div class="tag">03 · ICM-native engineering</div><h3>Sustentus</h3><p>A modern multi-tenant platform whose engineering system applies structured context and parallel AI-assisted delivery from inside the repository.</p><a href="/work-sustentus.html" style="color:var(--teal);font-weight:800">View case study →</a></div></div></div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apoyar · AI-Orchestrated Enterprise Engineering</title>
+  <meta name="description" content="Your engineering arm, compact enough to name and senior enough to trust. For 24 years we have designed, built and operated systems that companies cannot afford to have fail." />
+  <link rel="canonical" href="https://apoyar.io/" />
+  <meta property="og:title" content="Apoyar · AI-Orchestrated Enterprise Engineering" />
+  <meta property="og:description" content="The throughput of a large team with the accountability of senior architects you actually speak to. 24 years of zero-fail engineering." />
+  <meta property="og:url" content="https://apoyar.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Apoyar" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apoyar · AI-Orchestrated Enterprise Engineering" />
+  <meta name="twitter:description" content="Systems companies cannot afford to have fail. AI-orchestrated engineering under senior accountability." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23191713'/><text x='16' y='22' font-family='Georgia,serif' font-size='20' font-weight='bold' fill='%23f7f5f0' text-anchor='middle'>A<tspan fill='%23d97757'>.</tspan></text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+<div style="width:100%; background:#f7f5f0; overflow-x:hidden">
 
-<section><div class="wrap"><div class="section-head"><div class="eyebrow" style="color:var(--teal)">The model has changed</div><h2>AI hasn't simply made developers faster.</h2><p>It allows us to rethink how enterprise software is designed, engineered and delivered. Apoyar combines more than two decades of enterprise experience with AI-assisted engineering, structured context and rigorous human governance.</p></div>
-<div class="cards"><div class="card"><b>Human expertise</b><p>Architecture, judgement, business understanding and accountability remain human responsibilities.</p></div><div class="card"><b>AI-assisted engineering</b><p>Analysis, specification, coding, testing, documentation and investigation operate at machine speed.</p></div><div class="card"><b>Interpretable context</b><p>Persistent, human-readable context gives AI the right knowledge at the right stage.</p></div><div class="card"><b>Engineering guardrails</b><p>CI, testing, security, review and approval gates keep acceleration governed.</p></div></div></div></section>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="brand-logo">Apoyar<span class="dot">.</span></a>
+      <nav class="nav-links">
+        <a href="engagements.html">Engagements</a>
+        <a href="work.html">Work</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Talk to an architect</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="wash"><div class="wrap"><div class="quote">“When engineering becomes faster than the requirements funnel, software delivery stops being primarily a capacity problem and becomes a decision-quality problem.”</div></div></section>
+  <main>
+    <!-- Hero Section -->
+    <section id="top" style="max-width:1220px; margin:0 auto; padding:92px 28px 68px">
+      <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 32px">Enterprise engineering since 2002 · UK · EU · India</p>
+      <h1 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(38px,6.2vw,84px); line-height:1.03; letter-spacing:-0.02em; margin:0; max-width:21ch; text-wrap:pretty">Your engineering arm, compact enough to name and senior enough to trust.</h1>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:40px; margin-top:44px; align-items:start">
+        <p style="font-size:19px; line-height:1.55; color:#413c34; margin:0; max-width:52ch; text-wrap:pretty">For twenty-four years we have designed, built and operated systems that companies cannot afford to have fail. We operate as a senior-led practice of principal architects and engineers, delivering that same standard with AI-orchestrated engineering — the throughput of a large team, with the direct accountability of partners you actually speak to.</p>
+        <div style="display:flex; flex-direction:column; gap:14px">
+          <a href="engagements.html" class="btn-primary">Six ways to engage us<span style="font-family:'IBM Plex Mono',monospace; font-size:12px">→</span></a>
+          <a href="work.html" class="btn-outline">What we have run in production<span style="font-family:'IBM Plex Mono',monospace; font-size:12px">→</span></a>
+        </div>
+      </div>
+    </section>
 
-<section><div class="wrap case"><div><div class="tag">Designed by Apoyar Architects</div><h2>Sustentus: architecture at AI velocity.</h2><p>Sustentus Limited is a sophisticated multi-tenant B2B service marketplace spanning AI-assisted requirements definition, expert matching, competitive proposals, project delivery and operational oversight.</p><p>Its architecture and engineering system have been shaped directly by Apoyar Architects, making it a practical proof point for governed AI-orchestrated delivery at meaningful scale.</p><a class="button" href="/work-sustentus.html">Explore the case study</a></div>
-<div class="metrics"><div class="metric"><strong>1,662</strong><span>commits across fetched development branches</span></div><div class="metric"><strong>157</strong><span>archived ICM pipeline runs</span></div><div class="metric"><strong>~120</strong><span>remote branch references</span></div><div class="metric"><strong>313</strong><span>commits in a recent 30-day window</span></div></div></div></section>
+    <!-- Metrics Band -->
+    <section style="border-top:1px solid rgba(25,23,19,0.12); border-bottom:1px solid rgba(25,23,19,0.12); background:#f2efe8">
+      <div style="max-width:1220px; margin:0 auto; padding:0 28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))">
+        <div style="padding:34px 28px 34px 0; border-right:1px solid rgba(25,23,19,0.12)">
+          <p style="font-family:Newsreader,Georgia,serif; font-size:40px; font-weight:300; margin:0; line-height:1">1.5m</p>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6b655c; margin:10px 0 0; line-height:1.5">Transactions through one Black Friday, held without incident</p>
+        </div>
+        <div style="padding:34px 28px; border-right:1px solid rgba(25,23,19,0.12)">
+          <p style="font-family:Newsreader,Georgia,serif; font-size:40px; font-weight:300; margin:0; line-height:1">9 yrs</p>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6b655c; margin:10px 0 0; line-height:1.5">Continuous CI/CD and 24×7 cover on our longest engagement</p>
+        </div>
+        <div style="padding:34px 28px; border-right:1px solid rgba(25,23,19,0.12)">
+          <p style="font-family:Newsreader,Georgia,serif; font-size:40px; font-weight:300; margin:0; line-height:1">4 per architect</p>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6b655c; margin:10px 0 0; line-height:1.5">Active engagements per lead architect, capped so focus holds</p>
+        </div>
+        <div style="padding:34px 0 34px 28px">
+          <p style="font-family:Newsreader,Georgia,serif; font-size:40px; font-weight:300; margin:0; line-height:1">24 yrs</p>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6b655c; margin:10px 0 0; line-height:1.5">Operating since 2002 under the same company number</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- The Inversion Section -->
+    <section style="max-width:1220px; margin:0 auto; padding:88px 28px">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:56px; align-items:start">
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:oklch(0.55 0.13 45); margin:0 0 20px">The inversion</p>
+          <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(32px,4.8vw,60px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 28px; text-wrap:pretty">The scarce resource in your project is now you.</h2>
+          <p style="font-size:18px; line-height:1.6; color:#413c34; margin:0 0 20px; text-wrap:pretty">Analysis, specification, implementation, tests and documentation now run at machine speed under a handful of senior architects. The trade-off that defined software development — cheap, fast, or good, pick two — has gone.</p>
+          <p style="font-size:18px; line-height:1.6; color:#413c34; margin:0; text-wrap:pretty">What has not gone is the consequence of building the wrong thing, or building it without someone who will still be there when a production service throws an error at 3am. The scarce input is no longer developer hours — it is judgement about what should be built, and someone answerable once it is live.</p>
+        </div>
 
-<section class="wash"><div class="wrap case"><div>
-<div class="tag">Built by Apoyar · AI-assisted operations</div><h2>ServiFlow: the AI operations platform for managed services.</h2>
-<p>ServiFlow turns monitoring events and customer service requests into governed service workflows, applies SLA targets, assists resolution, connects operational and development systems, and produces consolidated monthly management reporting.</p>
-<div class="integration-row"><span>Monitoring</span><span>Teams</span><span>Slack</span><span>Jira</span><span>Xero</span></div>
-<a class="button" href="/work-serviflow.html">Explore ServiFlow</a></div>
-<div class="live-proof" data-live-project="serviflow"><div class="live-proof-head"><div><b>ServiFlow engineering pulse</b><div class="fine" data-updated>Repository connection pending</div></div></div>
-<div class="live-proof-grid"><div class="live-proof-stat"><strong data-stat="commits30">—</strong><span>30-day commits</span></div><div class="live-proof-stat"><strong data-stat="activeDays30">—</strong><span>active days</span></div><div class="live-proof-stat"><strong data-stat="branches">—</strong><span>branches</span></div><div class="live-proof-stat"><strong data-stat="contributors">—</strong><span>contributors</span></div></div><canvas></canvas></div></div></section>
-<section class="wash"><div class="wrap"><div class="section-head"><div class="eyebrow" style="color:var(--teal)">The organisational inversion</div><h2>From development bottleneck to decision bottleneck.</h2></div>
-<div class="compare"><div class="panel"><h3>Traditional delivery</h3><p>Requirements accumulate while the organisation waits for engineering capacity.</p><div class="pipe"><i>Business</i><i>Requirements</i><i>Backlog</i><i class="hot">Development</i><i>Test</i><i>Release</i></div></div>
-<div class="panel"><h3>AI + ICM delivery</h3><p>Resolved intent feeds several independently contextualised streams in parallel.</p><div class="pipe"><i>Business decisions</i><i>Resolved context</i></div><div class="streams"><i>STREAM A</i><i>STREAM B</i><i>STREAM C</i></div><div class="pipe"><i>Continuous verify</i><i>CI/CD</i><i>Release</i></div></div></div></div></section>
+        <div style="border:1px solid rgba(25,23,19,0.16); background:#f2efe8; padding:32px 28px">
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#6b655c; margin:0 0 22px">How the mechanics have shifted</p>
+          <div style="display:flex; flex-direction:column; gap:20px; font-size:15px; line-height:1.55">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:18px; border-bottom:1px solid rgba(25,23,19,0.1)">
+              <div><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6b655c">Then · capacity bottleneck</span><p style="margin:6px 0 0; color:#5d5850">Projects waited for developer time. Discovery dragged on because people were busy.</p></div>
+              <div><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.55 0.13 45)">Now · decision bottleneck</span><p style="margin:6px 0 0; color:#191713">Engineering waits for intent. The pace is set by how fast a client can resolve ambiguity.</p></div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:18px; border-bottom:1px solid rgba(25,23,19,0.1)">
+              <div><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6b655c">Then · billable hours</span><p style="margin:6px 0 0; color:#5d5850">Agencies sold teams on a rate card. The supplier was incentivised to take longer.</p></div>
+              <div><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.55 0.13 45)">Now · outcome pricing</span><p style="margin:6px 0 0; color:#191713">We price the outcome, agree it up front, and bear the risk of how long it takes.</p></div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px">
+              <div><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#6b655c">Then · handovers and decay</span><p style="margin:6px 0 0; color:#5d5850">Build teams moved on. The system decayed in maintenance under whoever was left.</p></div>
+              <div><span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.55 0.13 45)">Now · continuous run</span><p style="margin:6px 0 0; color:#191713">The people who architected it operate it, back it with SLAs, and improve it every month.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section><div class="wrap two-col"><div class="content"><div class="eyebrow" style="color:var(--teal)">Why Apoyar</div><h2>20+ years of enterprise engineering. Now amplified by AI.</h2><p>For more than two decades, Apoyar brings long-standing enterprise engineering experience into a new operating model built around architecture, structured context, AI-assisted execution and explicit governance.</p><a class="button" href="/about.html">About Apoyar</a></div>
-<div class="paper"><div class="tag" style="color:#84d6db">Apoyar White Paper · 2026</div><h3 style="font-size:25px">Human-led.<br>AI-amplified.<br>Governed by design.</h3><p>Read the methodology, organisational implications and Sustentus evidence.</p><a class="button" href="/assets/Apoyar_AI_Orchestrated_Engineering_White_Paper.pdf">Download white paper</a></div></div></section>
+    <!-- Six Shapes of Work -->
+    <section style="background:#191713; color:#f7f5f0">
+      <div style="max-width:1220px; margin:0 auto; padding:92px 28px">
+        <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; justify-content:space-between; margin-bottom:52px">
+          <div>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:oklch(0.74 0.11 45); margin:0 0 20px">Engagement shapes</p>
+            <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(32px,4.8vw,60px); line-height:1.05; letter-spacing:-0.02em; margin:0; max-width:20ch; text-wrap:pretty">Six ways to work with us.</h2>
+          </div>
+          <p style="font-size:16px; line-height:1.6; color:#b8b1a6; max-width:36ch; margin:0; text-wrap:pretty">Each has a duration, a named architect and a written definition of done. The first one takes days. No discovery that never ends, no bodies on a timesheet.</p>
+        </div>
 
-<section class="cta"><div class="wrap"><h2>Ready to rethink how your software gets built?</h2><p>Talk to Apoyar Architects about a new enterprise platform, modernising an existing application, or transforming your engineering organisation for the AI era.</p><a class="button" style="background:white;color:var(--navy)" href="mailto:architects@apoyar.io">architects@apoyar.io</a></div></section>
-<footer><div class="wrap">
-<div class="footergrid"><div><div class="brand">APOYAR<small>ARCHITECTS</small></div><p class="fine">Enterprise Architecture & AI-Orchestrated Engineering.</p></div>
-<div class="footerlinks"><b>Explore</b><a href="/approach.html">Approach</a><a href="/work.html">Work</a><a href="/insights.html">Insights</a></div>
-<div class="footerlinks"><b>Contact</b><a href="mailto:architects@apoyar.io">architects@apoyar.io</a><a href="/privacy.html">Privacy</a><a href="/cookies.html">Cookies</a><a href="#" data-cookie-settings>Cookie settings</a></div></div>
-<div class="copyright"><span>© 2026 Apoyar Limited · Company 04178758</span><span>Registered in England &amp; Wales · apoyar.io</span></div></div></footer><div id="cookie-banner" class="cookie-banner" hidden><div class="cookie-row"><div class="cookie-copy"><b>Privacy by default.</b> Essential storage only unless optional analytics are accepted. <a href="/cookies.html" style="color:var(--teal)">Learn more</a>.</div><div class="cookie-actions"><button class="button alt" data-cookie-essential>Essential only</button><button class="button" data-cookie-accept>Accept analytics</button></div></div></div>
-<div id="cookie-modal" class="cookie-modal" hidden><div class="cookie-box"><h2>Cookie & analytics preferences</h2><div class="cookie-option"><div><b>Essential</b><p>Required for operation and privacy preferences.</p></div><span class="pill">Always on</span></div><div class="cookie-option"><div><b>Analytics</b><p>Optional measurement, only after consent and provider configuration.</p></div><span class="pill">Optional</span></div><div class="cookie-actions"><button class="button alt" data-cookie-essential>Essential only</button><button class="button" data-cookie-accept>Accept analytics</button><button class="button alt" data-cookie-close>Close</button></div></div></div><script src="/assets/site.js"></script><script src="/assets/consent.js"></script><script src="/assets/dynamic-stats.js"></script></body></html>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr)); gap:1px; background:transparent">
+          <div style="outline:1px solid rgba(247,245,240,0.16); background:#191713; padding:34px 30px; display:flex; flex-direction:column; gap:16px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.74 0.11 45); margin:0">01 · Proof of concept</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0; line-height:1.15">See it working in days</h3>
+            <p style="font-size:15px; line-height:1.6; color:#b8b1a6; margin:0; flex:1; text-wrap:pretty">A working proof of concept — real data paths, real screens, deployed to a URL you can put in front of your board or your customers. Scaffolded on lean modern infrastructure — Vercel, Railway, Netlify, Supabase — so a first version costs tens a month, not thousands.</p>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.7; color:#7d766c; margin:0; border-top:1px solid rgba(247,245,240,0.16); padding-top:14px">Shape · days, from £5k<br />One architect, one engineer</p>
+          </div>
+
+          <div style="outline:1px solid rgba(247,245,240,0.16); background:#191713; padding:34px 30px; display:flex; flex-direction:column; gap:16px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.74 0.11 45); margin:0">02 · Architecture sprint</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0; line-height:1.15">Decide what to build</h3>
+            <p style="font-size:15px; line-height:1.6; color:#b8b1a6; margin:0; flex:1; text-wrap:pretty">A senior architect takes your intent apart and returns a target architecture, a delivery plan, a cost envelope and the structured context an AI-assisted team needs to execute it. Valuable on its own, whoever ends up building it.</p>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.7; color:#7d766c; margin:0; border-top:1px solid rgba(247,245,240,0.16); padding-top:14px">Shape · 3–4 weeks, from £15k<br />One architect, fixed fee</p>
+          </div>
+
+          <div style="outline:1px solid rgba(247,245,240,0.16); background:#191713; padding:34px 30px; display:flex; flex-direction:column; gap:16px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.74 0.11 45); margin:0">03 · Platform build</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0; line-height:1.15">Ship the thing</h3>
+            <p style="font-size:15px; line-height:1.6; color:#b8b1a6; margin:0; flex:1; text-wrap:pretty">An orchestrated pod takes resolved intent to a deployed, monitored, documented system — parallel AI-assisted streams, human review gates, CI and tests from day one. Sustentus and ServiFlow were both built this way.</p>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.7; color:#7d766c; margin:0; border-top:1px solid rgba(247,245,240,0.16); padding-top:14px">Shape · 8–16 weeks, from £45k<br />Architect plus orchestrated pod</p>
+          </div>
+
+          <div style="outline:1px solid rgba(247,245,240,0.16); background:#191713; padding:34px 30px; display:flex; flex-direction:column; gap:16px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.74 0.11 45); margin:0">04 · Modernise or rescue</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0; line-height:1.15">Take on what you inherited</h3>
+            <p style="font-size:15px; line-height:1.6; color:#b8b1a6; margin:0; flex:1; text-wrap:pretty">Undocumented .NET, PHP, Magento or in-house applications that still run the business — often arriving with an acquisition. We map what is really there, stabilise it, then modernise in increments you can stop at any point.</p>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.7; color:#7d766c; margin:0; border-top:1px solid rgba(247,245,240,0.16); padding-top:14px">Shape · 2-week assessment first (£10k)<br />Then staged, stoppable phases</p>
+          </div>
+
+          <div style="outline:1px solid rgba(247,245,240,0.16); background:#191713; padding:34px 30px; display:flex; flex-direction:column; gap:16px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.74 0.11 45); margin:0">05 · Managed run</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0; line-height:1.15">Run it for us</h3>
+            <p style="font-size:15px; line-height:1.6; color:#b8b1a6; margin:0; flex:1; text-wrap:pretty">Release pipelines, monitoring, out-of-hours response, tier-1 resolution, capacity planning and a monthly report a board can read. Nine years and counting on our longest engagement.</p>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.7; color:#7d766c; margin:0; border-top:1px solid rgba(247,245,240,0.16); padding-top:14px">Shape · monthly SLA from £4.5k/mo<br />Rolling term, 24×7 cover</p>
+          </div>
+
+          <div style="outline:1px solid rgba(247,245,240,0.16); background:#191713; padding:34px 30px; display:flex; flex-direction:column; gap:16px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.74 0.11 45); margin:0">06 · AI delivery transformation</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0; line-height:1.15">Teach your team to work this way</h3>
+            <p style="font-size:15px; line-height:1.6; color:#b8b1a6; margin:0; flex:1; text-wrap:pretty">We install the method inside your own engineering organisation: structured context in the repository, multi-agent orchestration, review gates, and the governance that keeps auditors and boards comfortable with it.</p>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; line-height:1.7; color:#7d766c; margin:0; border-top:1px solid rgba(247,245,240,0.16); padding-top:14px">Shape · 6–12 weeks alongside your team<br />Ends with your people running it</p>
+          </div>
+        </div>
+
+        <p style="font-size:16px; line-height:1.6; color:#b8b1a6; margin:32px 0 0; max-width:74ch; text-wrap:pretty">Infrastructure is your choice, not our upsell. We deploy into your own cloud when governance requires it, and onto Vercel, Railway, Netlify or Supabase when the point is to prove something quickly at start-up cost. Either way the architecture is designed so the first deployment is not a dead end.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; margin-top:40px">
+          <a href="contact.html" class="btn-light">Book a scoping call<span style="font-family:'IBM Plex Mono',monospace; font-size:12px">→</span></a>
+          <p style="font-size:14px; color:#7d766c; margin:0">Thirty minutes with an architect. No pre-sales layer to get through.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section & Telemetry -->
+    <section style="max-width:1220px; margin:0 auto; padding:88px 28px 40px">
+      <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; justify-content:space-between; margin-bottom:48px">
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 20px">Production proof</p>
+          <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(32px,4.8vw,60px); line-height:1.05; letter-spacing:-0.02em; margin:0; max-width:20ch; text-wrap:pretty">What we have run in production.</h2>
+        </div>
+        <a href="work.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; border-bottom:1px solid oklch(0.55 0.13 45); padding-bottom:2px">The full record →</a>
+      </div>
+
+      <article style="border-top:1px solid #191713; padding-top:32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:40px; margin-bottom:56px; align-items:start">
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.55 0.13 45); margin:0 0 14px">Flagship engagement · 2016 → today</p>
+          <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(28px,3.6vw,44px); margin:0 0 16px; line-height:1.1">Bleckmann</h3>
+          <p style="font-size:17px; line-height:1.6; color:#413c34; margin:0 0 20px; max-width:48ch; text-wrap:pretty">Fashion and lifestyle logistics at European scale. We own the CI/CD, the release process, the .NET and PHP services behind it and the 24×7 support rota. Built for burst: peak weekends have passed one and a half million transactions.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; border:1px solid rgba(25,23,19,0.22); padding:6px 10px; border-radius:2px; color:#413c34">.NET</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; border:1px solid rgba(25,23,19,0.22); padding:6px 10px; border-radius:2px; color:#413c34">PHP</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; border:1px solid rgba(25,23,19,0.22); padding:6px 10px; border-radius:2px; color:#413c34">CI/CD</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; border:1px solid rgba(25,23,19,0.22); padding:6px 10px; border-radius:2px; color:#413c34">24×7 support</span>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; border:1px solid rgba(25,23,19,0.22); padding:6px 10px; border-radius:2px; color:#413c34">Burst scale</span>
+          </div>
+          <a href="bleckmann.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; border-bottom:1px solid oklch(0.55 0.13 45); padding-bottom:2px">Read the case study →</a>
+        </div>
+
+        <!-- Operational Telemetry visual replacing broken placeholder -->
+        <div class="telemetry-board">
+          <div class="telemetry-header">
+            <span><span class="status-dot"></span>Bleckmann Operational Mesh · Live</span>
+            <span>24×7 SRE · Rotterdam / Ghent / Swindon</span>
+          </div>
+          <div class="telemetry-grid">
+            <div class="telemetry-stat">
+              <p class="telemetry-stat-num">1.52M</p>
+              <p class="telemetry-stat-label">Peak 24h Transactions</p>
+            </div>
+            <div class="telemetry-stat">
+              <p class="telemetry-stat-num">99.98%</p>
+              <p class="telemetry-stat-label">Production SLA Uptime</p>
+            </div>
+            <div class="telemetry-stat">
+              <p class="telemetry-stat-num">42ms</p>
+              <p class="telemetry-stat-label">Pipeline Ingest Latency</p>
+            </div>
+            <div class="telemetry-stat">
+              <p class="telemetry-stat-num">9 yrs</p>
+              <p class="telemetry-stat-label">Continuous 24×7 Run</p>
+            </div>
+          </div>
+          <div style="border-top:1px solid rgba(247,245,240,0.12); padding-top:14px">
+            <p style="font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:#7d766c; margin:0 0 8px">Governed Pipeline Topology</p>
+            <div class="pipeline-track">
+              <span class="pipeline-node">Order Bus</span>
+              <span class="pipeline-arrow">→</span>
+              <span class="pipeline-node">.NET Core Engine</span>
+              <span class="pipeline-arrow">→</span>
+              <span class="pipeline-node">PHP Connectors</span>
+              <span class="pipeline-arrow">→</span>
+              <span class="pipeline-node">Automated CI/CD Gate</span>
+              <span class="pipeline-arrow">→</span>
+              <span class="pipeline-node" style="color:#34d399; border-color:#34d399">Production</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Historical Depth -->
+    <section style="max-width:1220px; margin:0 auto; padding:0 28px 88px">
+      <div style="border:1px solid rgba(25,23,19,0.14); padding:36px 32px; background:#f2efe8">
+        <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:baseline; justify-content:space-between; margin-bottom:24px">
+          <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:26px; margin:0">Before that</h3>
+          <p style="font-size:15px; color:#6b655c; margin:0; max-width:52ch; text-wrap:pretty">Twenty years of systems that had to work on day one. Several of them we invented outright.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:1px; background:transparent">
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f2efe8; padding:22px 20px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6b655c; margin:0 0 8px">Multi-tenant ITSM</p>
+            <p style="font-size:16px; margin:0 0 6px; font-weight:500">A1ServiceDesk</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Multi-tenant, multi-instance IT service management, in service at Heathrow Airport among others.</p>
+          </div>
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f2efe8; padding:22px 20px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6b655c; margin:0 0 8px">Contact infrastructure</p>
+            <p style="font-size:16px; margin:0 0 6px; font-weight:500">CallMeServer</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Web call-back requests joined to a PBX. Bridge, queue management, call recording.</p>
+          </div>
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f2efe8; padding:22px 20px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6b655c; margin:0 0 8px">Hardware and network</p>
+            <p style="font-size:16px; margin:0 0 6px; font-weight:500">UBANVPN</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">A portable VPN appliance — specified, engineered and brought to market as a product.</p>
+          </div>
+
+          <!-- Extended archive with smooth vanilla toggle -->
+          <div id="archive-row-1" style="outline:1px solid rgba(25,23,19,0.14); background:#f2efe8; padding:22px 20px; display:none">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6b655c; margin:0 0 8px">Asset management</p>
+            <p style="font-size:16px; margin:0 0 6px; font-weight:500">Cineworld Plc</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">A CMDB application covering estate-wide configuration and asset management.</p>
+          </div>
+          <div id="archive-row-2" style="outline:1px solid rgba(25,23,19,0.14); background:#f2efe8; padding:22px 20px; display:none">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6b655c; margin:0 0 8px">Customer operations</p>
+            <p style="font-size:16px; margin:0 0 6px; font-weight:500">MSG · Domino's</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Customer complaints handling for the UK's largest Domino's franchisee, across a large store estate.</p>
+          </div>
+          <div id="archive-row-3" style="outline:1px solid rgba(25,23,19,0.14); background:#f2efe8; padding:22px 20px; display:none">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6b655c; margin:0 0 8px">Commerce at scale</p>
+            <p style="font-size:16px; margin:0 0 6px; font-weight:500">Magento practice</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">A dedicated Magento agency: stores processing millions of transactions a year, migrations, and maintenance.</p>
+          </div>
+        </div>
+
+        <button type="button" id="toggle-archive-btn" class="btn-outline" style="margin-top:22px; padding:10px 16px; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase">Show three more ↓</button>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" style="border-top:1px solid rgba(25,23,19,0.12); background:#f2efe8">
+      <div style="max-width:1220px; margin:0 auto; padding:88px 28px">
+        <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-end; justify-content:space-between; margin-bottom:44px">
+          <div>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 20px">Our own platforms</p>
+            <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(32px,4.8vw,60px); line-height:1.05; letter-spacing:-0.02em; margin:0; max-width:22ch; text-wrap:pretty">We use what we sell.</h2>
+          </div>
+          <p style="font-size:16px; line-height:1.6; color:#5d5850; max-width:40ch; margin:0; text-wrap:pretty">Two platforms built this year by the method we bring to your work. Real users, real volume, real operations.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:1px; background:transparent; border:1px solid rgba(25,23,19,0.14)">
+          <article style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:36px 32px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.55 0.13 45); margin:0 0 14px">Live · serviflow.app</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:32px; margin:0 0 16px; line-height:1.1">ServiFlow</h3>
+            <p style="font-size:16px; line-height:1.6; color:#413c34; margin:0 0 20px; text-wrap:pretty">An AI-assisted service centre. Monitoring noise becomes governed workflows with SLA targets, assisted resolution, escalation into development, capacity planning and consolidated monthly reporting. We run our own managed service on it.</p>
+            <a href="products.html#serviflow" style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; border-bottom:1px solid oklch(0.55 0.13 45); padding-bottom:2px">Platform details →</a>
+          </article>
+          <article style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:36px 32px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.55 0.13 45); margin:0 0 14px">Live · sustentus.com</p>
+            <h3 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:32px; margin:0 0 16px; line-height:1.1">Sustentus</h3>
+            <p style="font-size:16px; line-height:1.6; color:#413c34; margin:0 0 20px; text-wrap:pretty">A multi-tenant B2B service marketplace: AI-assisted requirements definition, expert matching, competitive proposals, delivery and operational oversight. Architecture and engineering system designed by Apoyar.</p>
+            <a href="products.html#sustentus" style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; border-bottom:1px solid oklch(0.55 0.13 45); padding-bottom:2px">Platform details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Method & Five Gates Overview -->
+    <section style="max-width:1220px; margin:0 auto; padding:88px 28px">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:56px; align-items:start">
+        <div>
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 20px">Method</p>
+          <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(32px,4.8vw,60px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 24px; text-wrap:pretty">Five gates. Zero faith.</h2>
+          <p style="font-size:18px; line-height:1.6; color:#413c34; margin:0 0 20px; text-wrap:pretty">Multi-agent orchestration allows multiple change streams to run in parallel without colliding — but only when intent is resolved first and context is kept in the repository.</p>
+          <p style="font-size:17px; line-height:1.6; color:#5d5850; margin:0 0 32px; text-wrap:pretty">Nothing reaches production because an AI model sounded confident. Every commit passes through human architectural review and deterministic verification.</p>
+          <a href="about.html" class="btn-outline">Read how the method works<span style="font-family:'IBM Plex Mono',monospace; font-size:12px">→</span></a>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1px; background:transparent; border:1px solid rgba(25,23,19,0.14)">
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:22px 24px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.55 0.13 45); margin:0 0 8px">Gate 01</p>
+            <p style="font-size:17px; font-weight:500; margin:0 0 6px">Resolve intent</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Ambiguity is settled by architects up front, not during pull requests.</p>
+          </div>
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:22px 24px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.55 0.13 45); margin:0 0 8px">Gate 02</p>
+            <p style="font-size:17px; font-weight:500; margin:0 0 6px">Contextualise</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Rules, boundaries and interfaces versioned directly in the codebase.</p>
+          </div>
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:22px 24px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.55 0.13 45); margin:0 0 8px">Gate 03</p>
+            <p style="font-size:17px; font-weight:500; margin:0 0 6px">Build in parallel</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Specification, code, tests and docs progress simultaneously.</p>
+          </div>
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:22px 24px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.55 0.13 45); margin:0 0 8px">Gate 04</p>
+            <p style="font-size:17px; font-weight:500; margin:0 0 6px">Verify</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Automated CI, tests, security audits, and a named human sign-off.</p>
+          </div>
+          <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:22px 24px">
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; color:oklch(0.55 0.13 45); margin:0 0 8px">Gate 05</p>
+            <p style="font-size:17px; font-weight:500; margin:0 0 6px">Run and answer for it</p>
+            <p style="font-size:14px; line-height:1.55; color:#5d5850; margin:0">Telemetry, out-of-hours rota, and monthly board-level reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credibility & Foundation Section -->
+    <section style="border-top:1px solid rgba(25,23,19,0.12); background:#f2efe8">
+      <div style="max-width:1220px; margin:0 auto; padding:80px 28px">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:52px">
+          <div>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 20px">The firm</p>
+            <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(28px,3.8vw,48px); line-height:1.1; letter-spacing:-0.015em; margin:0 0 20px; text-wrap:pretty">Accountability you can actually speak to.</h2>
+            <p style="font-size:17px; line-height:1.6; color:#413c34; margin:0 0 16px; max-width:48ch; text-wrap:pretty">We are not an anonymous freelance collective or a body shop. Apoyar has been incorporated in the United Kingdom since 2002. Our lead architects have decades of skin in the game.</p>
+            <p style="font-size:17px; line-height:1.6; color:#413c34; margin:0; max-width:48ch; text-wrap:pretty">We cap every architect at four concurrent engagements so that when you need a critical architectural trade-off evaluated, you get our full attention.</p>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:1px; background:transparent; border:1px solid rgba(25,23,19,0.14); align-self:start">
+            <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:24px">
+              <p style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 10px">Registered</p>
+              <p style="font-size:16px; line-height:1.5; margin:0">Apoyar Limited · Company 04178758<br />England &amp; Wales, incorporated 2002</p>
+            </div>
+            <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:24px">
+              <p style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 10px">HQ &amp; Engineering Hubs</p>
+              <p style="font-size:16px; line-height:1.5; margin:0 0 10px">29 Brewhouse Lane, London SW15 2JX, United Kingdom</p>
+              <p style="font-size:15px; line-height:1.55; color:#5d5850; margin:0">Teams operating across UK, EU and India for overlapping delivery and 24×7 operational coverage.</p>
+            </div>
+            <div style="outline:1px solid rgba(25,23,19,0.14); background:#f7f5f0; padding:24px">
+              <p style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:#6b655c; margin:0 0 10px">Technology Estate</p>
+              <div style="display:flex; flex-direction:column; gap:8px; font-size:14px; color:#413c34">
+                <p style="margin:0"><strong style="color:#191713">Cloud:</strong> Azure, AWS, Vercel, Netlify, Railway</p>
+                <p style="margin:0"><strong style="color:#191713">Data:</strong> Postgres, Supabase, Redis, SQL Server</p>
+                <p style="margin:0"><strong style="color:#191713">Core:</strong> .NET Core, PHP, TypeScript, Python</p>
+                <p style="margin:0"><strong style="color:#191713">AI Stack:</strong> Claude, OpenAI, Gemini, Grok</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section style="background:#191713; color:#f7f5f0">
+      <div style="max-width:1220px; margin:0 auto; padding:96px 28px">
+        <h2 style="font-family:Newsreader,Georgia,serif; font-weight:300; font-size:clamp(30px,4.6vw,58px); line-height:1.06; letter-spacing:-0.02em; margin:0 0 28px; max-width:22ch; text-wrap:pretty">Tell us what has to work, and when.</h2>
+        <p style="font-size:18px; line-height:1.6; color:#b8b1a6; margin:0 0 36px; max-width:54ch; text-wrap:pretty">A new platform, an inherited application, or an engineering organisation that needs to work differently. Send two paragraphs and you will get an architect's reply, not a brochure.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:center">
+          <a href="mailto:architects@apoyar.io" style="font-family:Newsreader,Georgia,serif; font-size:clamp(22px,2.6vw,32px); color:#f7f5f0; border-bottom:1px solid oklch(0.74 0.11 45); padding-bottom:6px" class="hover-rust-bright">architects@apoyar.io</a>
+          <a href="contact.html" class="btn-light" style="padding:14px 20px">Send a brief <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#191713; color:#7d766c; border-top:1px solid rgba(247,245,240,0.14)">
+    <div style="max-width:1220px; margin:0 auto; padding:32px 28px; display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; align-items:center; font-size:13px">
+      <p style="margin:0; font-family:'IBM Plex Mono',monospace; letter-spacing:0.1em; text-transform:uppercase">Apoyar Limited · © 2026</p>
+      <div style="display:flex; flex-wrap:wrap; gap:22px">
+        <a href="engagements.html" style="color:#b8b1a6">Engagements</a>
+        <a href="work.html" style="color:#b8b1a6">Work</a>
+        <a href="products.html" style="color:#b8b1a6">Products</a>
+        <a href="about.html" style="color:#b8b1a6">About</a>
+        <a href="contact.html" style="color:#b8b1a6">Contact</a>
+        <a href="https://www.linkedin.com/company/apoyar/" style="color:#b8b1a6">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Progressive enhancement for 'Show three more' archive toggle -->
+<script>
+  (function() {
+    var btn = document.getElementById('toggle-archive-btn');
+    var rows = [
+      document.getElementById('archive-row-1'),
+      document.getElementById('archive-row-2'),
+      document.getElementById('archive-row-3')
+    ];
+    var expanded = false;
+
+    if (btn) {
+      btn.addEventListener('click', function() {
+        expanded = !expanded;
+        rows.forEach(function(row) {
+          if (row) row.style.display = expanded ? 'block' : 'none';
+        });
+        btn.textContent = expanded ? 'Show fewer ↑' : 'Show three more ↓';
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

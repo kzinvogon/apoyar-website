@@ -1,2 +1,10 @@
 /white-paper  /assets/Apoyar_AI_Orchestrated_Engineering_White_Paper.pdf  302
 /sustentus  /work-sustentus.html  301
+
+# Legacy redirects to new IA
+/platform-exit.html    /engagements.html    301
+/platform-exit         /engagements         301
+/ai-modernisation.html /engagements.html    301
+/ai-modernisation      /engagements         301
+/partners.html         /contact.html        301
+/partners              /contact             301
