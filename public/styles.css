@@ -100,6 +100,9 @@ a:hover {
   color: var(--ink-primary);
 }
 
+.brand-logo--mark { display: inline-flex; align-items: center; line-height: 0; }
+.brand-logo--mark img { height: 22px; width: auto; display: block; }
+
 .brand-logo .dot {
   color: var(--accent-rust-bright);
 }
