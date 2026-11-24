@@ -16,7 +16,7 @@
 /work/:slug        /work           301
 /contact/:slug     /contact        301
 
-# Plausible proxy (first-party). Replace PLAUSIBLE_SCRIPT_ID with the id from
+# Plausible proxy (first-party). Script id from
 # Plausible > Site settings > General > Site installation (pa-<id>.js)
-/pa/script.js      https://plausible.io/js/pa-PLAUSIBLE_SCRIPT_ID.js   200
+/pa/script.js      https://plausible.io/js/pa-Bd6iOunFzvMqErJ2T0w4d.js   200
 /pa/event          https://plausible.io/api/event                      200
