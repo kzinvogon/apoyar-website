@@ -13,5 +13,5 @@
 /studio/*          /about          301
 /blog              /               301
 /blog/*            /               301
-/work/*            /work           301!
-/contact/*         /contact        301
+/work/:slug        /work           301
+/contact/:slug     /contact        301
