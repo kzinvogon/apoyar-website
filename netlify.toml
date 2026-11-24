@@ -1,26 +1,19 @@
 [build]
-publish = "."
-functions = "netlify/functions"
-
-[[redirects]]
-from = "/api/github-stats"
-to = "/.netlify/functions/github-stats"
-status = 200
-
-[[redirects]]
-from = "/white-paper"
-to = "/assets/Apoyar_AI_Orchestrated_Engineering_White_Paper.pdf"
-status = 302
+  publish = "public"
 
 [[headers]]
-for = "/*"
+  for = "/*"
   [headers.values]
-  X-Content-Type-Options = "nosniff"
-  Referrer-Policy = "strict-origin-when-cross-origin"
-  X-Frame-Options = "SAMEORIGIN"
-  Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
-for = "/assets/site-v5.css"
+  for = "/*.css"
   [headers.values]
-  Cache-Control = "public, max-age=0, must-revalidate"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

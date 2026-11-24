@@ -1,0 +1,7 @@
+# Local Netlify folder
+.netlify
+.DS_Store
+.claude/
+# Design source material kept locally, not deployed
+Apoyar homepage redesign direction/
+Apoyar homepage redesign direction.zip
