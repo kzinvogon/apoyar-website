@@ -19,6 +19,9 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Plausible: cookieless, EU-hosted. Script and events proxied via /pa/ (see _redirects) -->
+  <script async src="/pa/script.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init({endpoint:"/pa/event"})</script>
 </head>
 <body>
 
@@ -213,6 +216,7 @@
           if (!r.ok) throw new Error('HTTP ' + r.status);
           form.style.display = 'none';
           success.style.display = 'block';
+          if (window.plausible) window.plausible('Contact enquiry');
         }).catch(function() {
           if (errorEl) errorEl.style.display = 'block';
         }).finally(function() {
