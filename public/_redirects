@@ -5,3 +5,13 @@
 /ai-modernisation      /engagements         301
 /partners.html         /contact.html        301
 /partners              /contact             301
+
+# Old apoyar.io (Framer) URLs to new IA
+/services          /engagements    301
+/services/*        /engagements    301
+/studio            /about          301
+/studio/*          /about          301
+/blog              /               301
+/blog/*            /               301
+/work/:slug        /work           301
+/contact/:slug     /contact        301
